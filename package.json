@@ -1,0 +1,23 @@
+{
+  "name": "assessment-submission",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start:backend": "cd backend && node index.js",
+    "start:web": "cd web && npm start",
+    "start:all": "concurrently \"npm run start:backend\" \"npm run start:web\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^5.5.1",
+    "cors": "^2.8.6",
+    "graphql": "^16.14.2"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  },
+  "description": ""
+}
